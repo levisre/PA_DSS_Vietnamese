@@ -148,13 +148,13 @@ Ghi chú: Phần này chỉ được áp dụng nếu như các phiên bản tr�
 
 - Những thông tin xác thực quan trọng  phải được mã hóa, sử dụng các thuật toán mã hóa mạnh trong khi lưu trữ
 
-- Dữ liệu sau khi được sử dụng cần phải được xóa ngay lập tức, bao gồm cả:
+	- Dữ liệu sau khi được sử dụng cần phải được xóa ngay lập tức, bao gồm cả:
 
-- File log
+	- File log
 
-- Các file debug
+	- Các file debug
 
-- Các nguồn thông tin khác nhận được từ khách hàng
+	- Các nguồn thông tin khác nhận được từ khách hàng
 
 *Yêu cầu này gắn liền với phần 3.1 trong PCI DSS*
 
@@ -185,7 +185,6 @@ Ghi chú: Phần này chỉ được áp dụng nếu như các phiên bản tr�
 
 2.5.	Ứng dụng thanh toán phải thiết lập một cơ chế quản lý và phân phối khóa được sử dụng cho các khóa tham gia vào quá trình mã hóa dữ liệu thẻ. Bào gồm ít nhất một trong các mục dưới đây:
 
-
 2.5.1. Tạo các khóa mạnh
 
 2.5.2. Bảo vệ quá trình phân phối khóa
@@ -210,9 +209,9 @@ Ghi chú: Yêu cầu này chỉ dành cho các ứng dụng - hoặc các phiên
 
 ###<a id="req3"/>Yêu cầu 3. Cung cấp các tính năng xác thực an toàn###
 
-3.1.	Ứng dụng thanh toán phải hỗ trợ  và bắt buộc việc sử dụng Unique User ID và phải bảo mật việc xcas thực cho tất cả các tác vụ truy cập dưới quyền quản trị, hoặc tất cả các truy cập vào dữ liệu thẻ. Việc xác thực an toàn bắt buộc phải được áp dụng cho tất cả các tìa khoản được tạo ra, hoặc được quản lý bởi úng dụng, hoặc được tạo ra khi cài đặt hoàn tất, hoặc các thay đổi sau cài đặt
+3.1.	Ứng dụng thanh toán phải hỗ trợ  và bắt buộc việc sử dụng Unique User ID và phải bảo mật việc xcas thực cho tất cả các tác vụ truy cập dưới quyền quản trị, hoặc tất cả các truy cập vào dữ liệu thẻ. Việc xác thực an toàn bắt buộc phải được áp dụng cho tất cả các tài khoản được tạo ra, hoặc được quản lý bởi úng dụng, hoặc được tạo ra khi cài đặt hoàn tất, hoặc các thay đổi sau cài đặt
 
-Chi chú: Khái niệm "Các thay đổi sau cài đặt" ở trong yêu cầu 3 được mô tả là tất cả các thay đổi của ứng dụng mà dẫn đến việc tài khoản người dùng bị khôi phục về các cấu hình mặc định, thay đổi các cấu hình của tài khoản đang tồn tại, các thay đổi tạo ra các tài khoản mới, haowcj là tạo mới lại các tài khaonr đang tồn tại
+Chi chú: Khái niệm "Các thay đổi sau cài đặt" ở trong yêu cầu 3 được mô tả là tất cả các thay đổi của ứng dụng mà dẫn đến việc tài khoản người dùng bị khôi phục về các cấu hình mặc định, thay đổi các cấu hình của tài khoản đang tồn tại, các thay đổi tạo ra các tài khoản mới, hoặc là tạo mới lại các tài khaonr đang tồn tại
 
 Ứng dụng phải thực hiện các phần từ 3.1.1 đến 3.1.11 dưới đây
 
@@ -220,7 +219,7 @@ Chi chú: Khái niệm "Các thay đổi sau cài đặt" ở trong yêu cầu 3
 
 *Yêu cầu này gắn liền với phần 2.1 tỏng PCI DSDS.
 
-3.1.2. Ứng dụng phải bắt buộc thay đổi tất cả các mật khẩu mặc định của tất cả các tìa khoản được tạo ra và quản lý bởi ứng dụng, hay sau khi quá trình cài đặt kết thú, hoặc các thay đổi sau càu đặt.
+3.1.2. Ứng dụng phải bắt buộc thay đổi tất cả các mật khẩu mặc định của tất cả các tài khoản được tạo ra và quản lý bởi ứng dụng, hay sau khi quá trình cài đặt kết thú, hoặc các thay đổi sau càu đặt.
 
 Điều này áp dụng cho tất cả các loại tòi khoản, bao gồm cả tài khoản user, tài khoản của ứng dụng và các dịch vụ, tài khoản được sử dụng bởi nhà cung cấp cho mục đích hỗ trợ kĩ thuật .
 
@@ -310,7 +309,7 @@ Ghi chú: biến input không cần phải khó đoán được hoặc phải gi
 
 4.2.4. Các truy cập truy cập không hợp lệ
 
-4.2.5. Việc sử dụng, hoặc thay đổi đến phương pháp định danh và xác thực của ứng dung, bao goomf cả việc tạo lập các tìa khoản mới, cố gắng chiếm quyền,..., và tất cả các thay đổi, thêm, sửa, xóa đến các tìa khoản trong ứng dụng bằng quyền root hoặc quyền quản trị.
+4.2.5. Việc sử dụng, hoặc thay đổi đến phương pháp định danh và xác thực của ứng dung, bao goomf cả việc tạo lập các tài khoản mới, cố gắng chiếm quyền,..., và tất cả các thay đổi, thêm, sửa, xóa đến các tài khoản trong ứng dụng bằng quyền root hoặc quyền quản trị.
 
 4.2.6. Việc khởi tạo, dừng, hoặc tạm dừng việc ghi log quá trình kiểm tra của ứng dụng.
 
@@ -370,7 +369,7 @@ Ghi chú: Ví dụ về tính năng ngày có thể bao gồm việc :
 5.1.4. Code của ứng dụng thanh toán phải được review lại trước khi release cho khách hàng, nếu như có bất kì sự thay đổi quan trọng nào, để xác định bất cứ những rủi ro về code nào (kiểm tra bằng cách thủ công hoặc tự động), để đảm bảo được ít nhất: 
 - Việc xem xét các thay đổi về code phải được thực hiện bởi một đơn vị độc lập, chứ không phảido người viết code. và đơn vị thực hiện xem xét code phải có kiến thức về code review và kinh nghiệm về secure coding.
 
--> Code review để đảm bảo được code được viết dựa theo các hướng dẫn về Secure Coding (xem yêu cầu 5.2).
+- Code review để đảm bảo được code được viết dựa theo các hướng dẫn về Secure Coding (xem yêu cầu 5.2).
 
 - Các phần sửa lỗi phải được áp dụng ngay rồi mới release.
 
@@ -535,7 +534,7 @@ Ghi chú: Yêu cầu này áp dụng cho tất cả các ứng dụng được t
 
 7.1.	Nhà phát triển ứng udngj phải lập ra một quy trình để xác định và quản lý điểm yếu, theo các tiêu chí dưới đây (Ghi chú: tất cả các phần mềm hoặc hệ thống có liên quan (được cung cấp cùng ứng dụng thanh toán, hoặc được yêu cầu phải có khi vận hành ứng dụng thanh toán (ví dụ, web server, các thư viện và chương trình của bên thứ ba) đều nằm trong phạm vi của quy trình này)
 
-7.1.1. Xác định các lỗ hổng bảo mật mới dựa trên các nguồn đáng tin cậy, haowcj là cập nhật các thông tin bảo mật.
+7.1.1. Xác định các lỗ hổng bảo mật mới dựa trên các nguồn đáng tin cậy, hoặc là cập nhật các thông tin bảo mật.
 
 7.1.2. Xếp hạng rủi ro cho tất cả các điểm yếu được tìm thấy, bao gồm tất cả các điểm yếu ó trong tất cả các phần mềm hoặc hệ thống có liên quan (được cung cấp cùng ứng dụng thanh toán, hoặc được yêu cầu phải có khi vận hành ứng dụng thanh toán
 
@@ -653,7 +652,7 @@ Ví dụ về danh sách các mạng công cộng bao gồm:
 
 Ghi chú: Các giao thức dạng clear text như Telnet hay rlogin không được phép sử dụng trong các tác vụ truy cập bằng quyền quản trị
 
-SSL và các phiên bản TLS cũ không được coi là các phương pháp mã hóa mạnh. Các ứng dụng thanh toán không được phép sử dụng, haowcj hỗ trợ sử dungjSSL hoặc các phiên bản TLS cũ. Ứng dụng có sử dụng TLS không được cho phép sử dụng SSL trong trường hợp failback.
+SSL và các phiên bản TLS cũ không được coi là các phương pháp mã hóa mạnh. Các ứng dụng thanh toán không được phép sử dụng, hoặc hỗ trợ sử dungjSSL hoặc các phiên bản TLS cũ. Ứng dụng có sử dụng TLS không được cho phép sử dụng SSL trong trường hợp failback.
 
 *Yêu cầu này gắn liền với phần 2.3 trong PCI DSS*
 
@@ -673,7 +672,7 @@ Ghi chú: Xác thực nhiều bước yêu cầu sử dụng ít nhất hai trê
 
 13.1. 	Phát triển, duy trì và phân phối một bản Hướng dẫn triển khai dịch vụ phù hợp với chuẩn PA DSS cho khách hàng, nhà bán lẻ, hoặc đối tác tích hợp dịch vụ, bao gồm đủ những yếu tố sau:
 
-13.1.1. Cung cấp đẩy đủ các thông tin của ứng dụng cho kahchs hàng, nhà bán lẻ, haowcj đối tác tích hợp.
+13.1.1. Cung cấp đẩy đủ các thông tin của ứng dụng cho kahchs hàng, nhà bán lẻ, hoặc đối tác tích hợp.
 
 13.1.2. Liệt kê tất cả các yêu cầu trong tài liệu này, bất cứ khi nào bản Hướng dẫn triển khai được tham chiếu
 
