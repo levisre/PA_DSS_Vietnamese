@@ -148,7 +148,7 @@ Ghi chú: Phần này chỉ được áp dụng nếu như các phiên bản tr�
 
 - Những thông tin xác thực quan trọng  phải được mã hóa, sử dụng các thuật toán mã hóa mạnh trong khi lưu trữ
 
-	- Dữ liệu sau khi được sử dụng cần phải được xóa ngay lập tức, bao gồm cả:
+- Dữ liệu sau khi được sử dụng cần phải được xóa ngay lập tức, bao gồm cả:
 
 	- File log
 
@@ -211,17 +211,17 @@ Ghi chú: Yêu cầu này chỉ dành cho các ứng dụng - hoặc các phiên
 
 3.1.	Ứng dụng thanh toán phải hỗ trợ  và bắt buộc việc sử dụng Unique User ID và phải bảo mật việc xcas thực cho tất cả các tác vụ truy cập dưới quyền quản trị, hoặc tất cả các truy cập vào dữ liệu thẻ. Việc xác thực an toàn bắt buộc phải được áp dụng cho tất cả các tài khoản được tạo ra, hoặc được quản lý bởi úng dụng, hoặc được tạo ra khi cài đặt hoàn tất, hoặc các thay đổi sau cài đặt
 
-Chi chú: Khái niệm "Các thay đổi sau cài đặt" ở trong yêu cầu 3 được mô tả là tất cả các thay đổi của ứng dụng mà dẫn đến việc tài khoản người dùng bị khôi phục về các cấu hình mặc định, thay đổi các cấu hình của tài khoản đang tồn tại, các thay đổi tạo ra các tài khoản mới, hoặc là tạo mới lại các tài khaonr đang tồn tại
+Chi chú: Khái niệm "Các thay đổi sau cài đặt" ở trong yêu cầu 3 được mô tả là tất cả các thay đổi của ứng dụng mà dẫn đến việc tài khoản người dùng bị khôi phục về các cấu hình mặc định, thay đổi các cấu hình của tài khoản đang tồn tại, các thay đổi tạo ra các tài khoản mới, hoặc là tạo mới lại các tài khoản đang tồn tại
 
 Ứng dụng phải thực hiện các phần từ 3.1.1 đến 3.1.11 dưới đây
 
-3.1.1. Ứng dụng thanh toán không sử dụng (hoặc không yêu cầu sử dụng) tài khoản admin mặc định ở các phần mềm liên quan khác (ví dụ, ứng dụng thanh toán không được sử dụng tài quản admin của hệ thống database)
+3.1.1. Ứng dụng thanh toán không sử dụng (hoặc không yêu cầu sử dụng) tài khoản admin mặc định ở các phần mềm liên quan khác (ví dụ, ứng dụng thanh toán không được sử dụng tài khoản admin của hệ thống database)
 
 *Yêu cầu này gắn liền với phần 2.1 tỏng PCI DSDS.
 
-3.1.2. Ứng dụng phải bắt buộc thay đổi tất cả các mật khẩu mặc định của tất cả các tài khoản được tạo ra và quản lý bởi ứng dụng, hay sau khi quá trình cài đặt kết thú, hoặc các thay đổi sau càu đặt.
+3.1.2. Ứng dụng phải bắt buộc thay đổi tất cả các mật khẩu mặc định của tất cả các tài khoản được tạo ra và quản lý bởi ứng dụng, hay sau khi quá trình cài đặt kết thú, hoặc các thay đổi sau cài đặt.
 
-Điều này áp dụng cho tất cả các loại tòi khoản, bao gồm cả tài khoản user, tài khoản của ứng dụng và các dịch vụ, tài khoản được sử dụng bởi nhà cung cấp cho mục đích hỗ trợ kĩ thuật .
+Điều này áp dụng cho tất cả các loại tài khoản, bao gồm cả tài khoản user, tài khoản của ứng dụng và các dịch vụ, tài khoản được sử dụng bởi nhà cung cấp cho mục đích hỗ trợ kĩ thuật .
 
 Ghi chú: Ngay sau quá trình cài đặt và các thay đổi sau cài đặt, ứng dụng phải có cơ chế ngăn chặn toàn bộ việc sử dụng các tài khoản built in cho đến khi mật khẩu mặc định được thay đổi
 
@@ -229,7 +229,7 @@ Ghi chú: Ngay sau quá trình cài đặt và các thay đổi sau cài đặt,
 
 *Yêu cầu này gắn liền với phần 8.1. trong PCI DSS*.
 
-3.1.4 Ứng dụng thanh toán phải có ít nhật một trong số các phương pháp duwois đây để thực hiện xác thực cho tất cả người dùng:
+3.1.4 Ứng dụng thanh toán phải có ít nhật một trong số các phương pháp dưới đây để thực hiện xác thực cho tất cả người dùng:
 
 - 	Các thông tin người dùng biết, ví dụ như mật khẩu
 
@@ -239,7 +239,7 @@ Ghi chú: Ngay sau quá trình cài đặt và các thay đổi sau cài đặt,
 
 *Yêu cầu này gắn liền với phần 8.2 trong PCI DSS*
 
-3.1.5. Ứng dụng thanh toán không yêu cầu sử dụng các nhóm tài khaonr, hay các tài khoản dùng chung, các tên tài khoản và mật khẩu phổ biến
+3.1.5. Ứng dụng thanh toán không yêu cầu sử dụng các nhóm tài khoản, hay các tài khoản dùng chung, các tên tài khoản và mật khẩu phổ biến
 
 *Yêu cầu này gắn liền với phần 8.5 trong PCI DSS*
 
@@ -278,7 +278,7 @@ Yêu cầu nay gắn liền với phần 8.1.6 trong PCI DSS*.
 
 *Yêu cầu này gắn liền với phần 8.2.1 trong PCI DSS*.
 
-3.3.1. Sử dụng các thuật toán mã hóa mnahj để mã hoắ mật khẩu, khiến chúng không thể bị đọc được trong suốt quá trình truyền tải.
+3.3.1. Sử dụng các thuật toán mã hóa mạnh để mã hoắ mật khẩu, khiến chúng không thể bị đọc được trong suốt quá trình truyền tải.
 
 3.3.2. Sử dụng một phương thuật toán mã hóa một chiều mạnh, dựa trên các tiêu chuẩn được công bố rộng rãi để mã hóa toàn bộ mật khẩu trong ứng dụng thanh toán khiến chúng không thể đọc được trong quá trình lưu trữ
 
@@ -299,7 +299,7 @@ Ghi chú: biến input không cần phải khó đoán được hoặc phải gi
 
 *Yêu cầu này gắn liền với phần 10.1 trong PCI DSS*.
 
-4.2.	Ứng dụng thanh toán phải cung cấp một quá trình kiểm tra tự động để tái cấu trúc lại những sự kiện duwois đây:
+4.2.	Ứng dụng thanh toán phải cung cấp một quá trình kiểm tra tự động để tái cấu trúc lại những sự kiện dưới đây:
 
 4.2.1. Tất cả những cá nhân độc lập truy cập đến dữ liệu thẻ của họ từ ứng dụng
 
@@ -332,7 +332,7 @@ Ghi chú: biến input không cần phải khó đoán được hoặc phải gi
 
 4.4. Ứng dụng thanh toán phải tương thích với công việc ghi log tập trung
 
-Ghi chú: Ví dụ về tính năng ngày có thể bao gồm việc :
+Ghi chú: Ví dụ về tính năng này có thể bao gồm việc :
 
 - Ghi log thông qua các chuẩn chung về log file. như Commom Log File System (CLFS, syslog, delimited text, vv...
 
@@ -377,7 +377,7 @@ Ghi chú: Ví dụ về tính năng ngày có thể bao gồm việc :
 
 - Biên bản của kết quả review code có bao gồm xác nhận từ cấp quản lý, thông tin về tác giả của code, người review, những chỉnh sửa đã được áp dụng, trước khi release.
 
-Ghi chú: Yêu cầu về code review này áp dụng cho tất cả các thành phần của ứng dụng thanh toán (cả các ứng dụng nội bộ và các ứng dụng web được công khai(, cũng như mototj pahanf của vòng đợi phát triển hệ thống. Phần code review có thể được tiến hanh fobiwr những đơn vị có kinh nghiệm ngay trong tổ chức, hoặc các bên thứ 3.
+Ghi chú: Yêu cầu về code review này áp dụng cho tất cả các thành phần của ứng dụng thanh toán (cả các ứng dụng nội bộ và các ứng dụng web được công khai( cũng như một phần của quá trình phát triển hệ thống. Phần code review có thể được tiến hành bởi những đơn vị có kinh nghiệm ngay trong tổ chức, hoặc các bên thứ 3.
 
 *Yêu cầu này gắn liền với phần 6.3.2 trong PCI DSS*.
 
@@ -407,7 +407,7 @@ Ghi chú: Yêu cầu về code review này áp dụng cho tất cả các thành
 
 - Các kí thuật đánh giá rủi ro.
 
-Ghi chú: Việc đào tạo cho developer có thể được thực hiện bởi nguồn luwcuj lộ bộ, hoặc là các bên thứ 3.
+Ghi chú: Việc đào tạo cho developer có thể được thực hiện bởi nguồn lực lộ bộ, hoặc là các bên thứ 3.
 
 5.1.7.1.  Luôn luôn thực hiện việc cập nhật các chương trình đào tạo mới để phù hợp với các công nghệ và các phương pháp phát triển mới.
 
@@ -417,7 +417,7 @@ Ghi chú: Việc đào tạo cho developer có thể được thực hiện bở
 
 Ghi chú, các yêu cầu từ 5.2.1 đến 5.2.6 dưới đây, áp dung cho tất cả các dạng ứng dụng (kể cả ứng dụng nội bộ lẫn ứng dụng công khai)
 
-5.2.1.  Các kĩ thuật injection, phổ biến nhất là SQL Injection. Cũng cần quan tâm đến OS Command Injeciton, LDAP và XPath Injeciton, hoặc các phương pháp injection khác.
+5.2.1.  Các kĩ thuật injection, phổ biến nhất là SQL Injection. Cũng cần quan tâm đến OS Command Injection, LDAP và XPath Injection, hoặc các phương pháp injection khác.
 
 5.2.2. Buffer Overflow
 
@@ -456,9 +456,9 @@ Ghi chú: Các yêu cầu từ 5.2.7 đến 5.2.10 dưới đây, áp dụng cho
 
 - Định dạng của số phiên bản, bao gồm số lượng các phần tử, các khoảng ngăn cách, các bộ kí tự, vv... (bao gồm các kí tự số, chứ và các kí tự đặc biệt).
 
-- Định nghĩa của các phần tử được hiển thị trong số phiên bản (ví dụ, loại thay đổi, major version, minor version, maintenance release, wildcard, vv...)
+- Định nghĩa của các phần tử được hiển thị trong số phiên bản (ví dụ, loại thay đổi, major version, minor version, maintenance release, kí tự viết tắt, vv...)
 
-- Định nghĩa các phần tử đánh đấu việc sử dụng wildcard.
+- Định nghĩa các phần tử đánh đấu việc sử dụng kí tự viết tắt.
 
 5.4.2. Phương pháp đánh số phiên bản phải làm rõ được loại thay đổi và tầm ảnh hưởng của chúng trong ứng dụng, dựa trên PA DSS Program Guide, bao gồm:
 
@@ -476,17 +476,17 @@ Ghi chú: Các yêu cầu từ 5.2.7 đến 5.2.10 dưới đây, áp dụng cho
 
 5.4.3. Phương pháp đánh số phiên bản phải đặc biệt xác định được khi nào wldcard được sử dụng, và nếu được sử dụng thì sử dụng như thế nào. Cần phải có những yêu cầu sau đây:
 
-- Chi tiết về cách sử dụng wildcard trong phương pháp đánh số phiên bản
+- Chi tiết về cách sử dụng kí tự viết tắt trong phương pháp đánh số phiên bản
 
 - Wild card không bao giờ được sử dụng cho bất cứ thay đổi nào mà gây ra ảnh hưởng đến các vấn đề bảo mật hoặc các yêu cầu PA DSS.
 
-- Bất cứ phần tử nào của số phiên bản được sử dụng để biểu thị cho các thay đổi khong ảnh hưởng đến bảo mật (bao gồm các phần tử là wildcard), không được phép sử dụng để biểu thị cho các thay đổi ảnh hưởng đến bảo mật.
+- Bất cứ phần tử nào của số phiên bản được sử dụng để biểu thị cho các thay đổi khong ảnh hưởng đến bảo mật (bao gồm các phần tử là kí tự viết tắt), không được phép sử dụng để biểu thị cho các thay đổi ảnh hưởng đến bảo mật.
 
-- Các phần tử là wildcard không được phép dừng để biểu thị cho các thay đổi ảnh hưởng đến bảo mật. Bất cứ một phần tử trong số phiên bản nào hiển thị ở phía sau một phần tử là wildcard cũng không được phép dùng để biểu thị cho các thay đổi ảnh hưởng đến bảo mật.
+- Các phần tử là kí tự viết tắt không được phép dừng để biểu thị cho các thay đổi ảnh hưởng đến bảo mật. Bất cứ một phần tử trong số phiên bản nào hiển thị ở phía sau một phần tử là kí tự viết tắt cũng không được phép dùng để biểu thị cho các thay đổi ảnh hưởng đến bảo mật.
 
 5.4.4. Phương pháp đánh số phiên bản được công bố bởi nhà phát triển ứng dụng phải có mối liên hệ với khách hàng và các nhà tích hợp/ nhà phân phối.
 
-5.4.5. Một vài nhà phát triển ứng dụng có thêm cả một phương pháp đánh số phiên bản kahchs được sử dụng nội bộ (phục vụ cho quá trình phát triển ứng dụng) khác với phương pháp được sử dụng trong quá trình release chính thức. Trong trường hợp này, thì cần phải có các tài liệu mô tả chi tiết cho những phương pháp đó, cũng như mối liên hệ giữa chúng.
+5.4.5. Một vài nhà phát triển ứng dụng có thêm cả một phương pháp đánh số phiên bản khách được sử dụng nội bộ (phục vụ cho quá trình phát triển ứng dụng) khác với phương pháp được sử dụng trong quá trình release chính thức. Trong trường hợp này, thì cần phải có các tài liệu mô tả chi tiết cho những phương pháp đó, cũng như mối liên hệ giữa chúng.
 
 5.4.6. Nhà phát triển ứng dụng phải có một quy trình để kiểm tra việc cập nhật ứng dụng để đảm bảo sự tương thích với phương pháp đánh số phiên bản trước khi release sản phẩm.
 
@@ -518,7 +518,7 @@ Tài liệu này bao gồm
 
 *Yêu cầu này gắn liền với phần 1.2.3 và 2.1.1 trong PCI DSS*.
 
-6.2. Đối với các ứng dụng thanh toán sử dụng mạng khôn dây, các ứng dụng nhày phải tương thích với ác tiêu chuẩn dành cho doanh nghiệp (ví dụ IEEE 802.11i) để sử dụng các phương phapts mã hóa và xác thực mạnh trong quá trình truyền tải dữ liệu
+6.2. Đối với các ứng dụng thanh toán sử dụng mạng khôn dây, các ứng dụng nhày phải tương thích với ác tiêu chuẩn dành cho doanh nghiệp (ví dụ IEEE 802.11i) để sử dụng các phương pháp mã hóa và xác thực mạnh trong quá trình truyền tải dữ liệu
 
 Ghi chú: Không được phép sử dụng WEP
 
@@ -532,23 +532,23 @@ Ghi chú: Yêu cầu này áp dụng cho tất cả các ứng dụng được t
 
 ###<a id="req7"/>Yêu cầu 7. Kiểm tra bảo mật cho các ứng dụng thanh toán và luôn duy trì cập nhật ứng dụng.###
 
-7.1.	Nhà phát triển ứng udngj phải lập ra một quy trình để xác định và quản lý điểm yếu, theo các tiêu chí dưới đây (Ghi chú: tất cả các phần mềm hoặc hệ thống có liên quan (được cung cấp cùng ứng dụng thanh toán, hoặc được yêu cầu phải có khi vận hành ứng dụng thanh toán (ví dụ, web server, các thư viện và chương trình của bên thứ ba) đều nằm trong phạm vi của quy trình này)
+7.1.	Nhà phát triển ứng dụng phải lập ra một quy trình để xác định và quản lý điểm yếu, theo các tiêu chí dưới đây (Ghi chú: tất cả các phần mềm hoặc hệ thống có liên quan (được cung cấp cùng ứng dụng thanh toán, hoặc được yêu cầu phải có khi vận hành ứng dụng thanh toán (ví dụ, web server, các thư viện và chương trình của bên thứ ba) đều nằm trong phạm vi của quy trình này)
 
 7.1.1. Xác định các lỗ hổng bảo mật mới dựa trên các nguồn đáng tin cậy, hoặc là cập nhật các thông tin bảo mật.
 
-7.1.2. Xếp hạng rủi ro cho tất cả các điểm yếu được tìm thấy, bao gồm tất cả các điểm yếu ó trong tất cả các phần mềm hoặc hệ thống có liên quan (được cung cấp cùng ứng dụng thanh toán, hoặc được yêu cầu phải có khi vận hành ứng dụng thanh toán
+7.1.2. Xếp hạng rủi ro cho tất cả các điểm yếu được tìm thấy, bao gồm tất cả các điểm yếu có trong tất cả các phần mềm hoặc hệ thống có liên quan (được cung cấp cùng ứng dụng thanh toán, hoặc được yêu cầu phải có khi vận hành ứng dụng thanh toán
 
-7.1.3. Kiểm tra bảo mật cho ứng dụng thanh toán và cấp nhậ để sử lỗi cho tất cả các điểm yếu đang tồn tại cho đến khi release.
+7.1.3. Kiểm tra bảo mật cho ứng dụng thanh toán và cập nhật để sửa lỗi cho tất cả các điểm yếu đang tồn tại cho đến khi release.
 
-7.2.	Nhà phát triển ứng dụng phải thiết lập một quy tình để định kì phát triển và áp dụng các bản vá bảo mật hoặc các bản nâng cấp.
+7.2.	Nhà phát triển ứng dụng phải thiết lập một quy trình để định kì phát triển và áp dụng các bản vá bảo mật hoặc các bản nâng cấp.
 
-7.2.1. Các bản vá và các bản cập nhật phải được cung cấp cho khách hàng thoe một phương pháp an toàn, đáng tin cậy
+7.2.1. Các bản vá và các bản cập nhật phải được cung cấp cho khách hàng theo một phương pháp an toàn, đáng tin cậy
 
 7.2.2. Các bản vá và các bản cập nhật phải được cung cấp cho khách hàng theo một phương pháp đảm bảo sự toàn vẹn.
 
 7.2.3. Cung cấp hướng dẫn cho khách hàng về việc cài đặt an toàn các bản vá và các bản cập nhật
 
-7.3.	 PHải có phần "Release Note" cho tất cả các bản cập nhậ của ứng dụng, mô tả chi tiết và tác dụng của bản cập nhật, cũng như số phiên bản thayddooir như thế nào.
+7.3.	 Phải có phần "Release Note" cho tất cả các bản cập nhậ của ứng dụng, mô tả chi tiết và tác dụng của bản cập nhật, cũng như số phiên bản thay đổi như thế nào.
 
 ###<a id="req8"/>Yêu cầu 8. Tính tương thích với các mô hình mạng an toàn###
 
@@ -564,7 +564,7 @@ Ghi chú: SSL và các bản TLS cũ không được coi là các giao thức b�
 
 8.3. Ứng dụng thanh toán không được phép sử dụng các dịch vụ và sản phẩm có thể gây xung đột hoặc không tương thích với việc sử dụng các công nghệ xác thực nhiều bước.
 
-Ghi chú: Xác thực nhiều bước yêu cầu phải cso ít nhất từ 2 đến 3 cơ chế xác thực (xem ở dưới) được sử dụng cho việc xác thực. Sử dụng một phương pháp xác thực 2 lần (ví dụ, sử dụng 2 mật khẩu riêng biệt) không được coi là xác thực nhiều bước. Các phương pháp xác thực là:
+Ghi chú: Xác thực nhiều bước yêu cầu phải có ít nhất từ 2 đến 3 cơ chế xác thực (xem ở dưới) được sử dụng cho việc xác thực. Sử dụng một phương pháp xác thực 2 lần (ví dụ, sử dụng 2 mật khẩu riêng biệt) không được coi là xác thực nhiều bước. Các phương pháp xác thực là:
 
 - Các thông tin người dùng biết, ví dụ như mật khẩu
 
@@ -600,11 +600,11 @@ Thay vào đó, nếu như phân phối các bản cập nhật thông qua VPN h
 
 - Thay đổi tất cả các tùy chỉnh mặc định ở chương trình tạo kết nối truy cập từ xa (ví dụ, thay đôi rmaatj khẩu mặc định và sử dụng một mật khẩu riêng biệt cho mỗi khách hàng)
 
-- CHỉ cho phép kết nối từ những đại chỉ IP/MAC đã được xác định trước.
+- CHỉ cho phép kết nối từ những địa chỉ IP/MAC đã được xác định trước.
 
 - Sử dụng các kiểu xác thực mạnh, và mật khẩu phức tạp cho quá trình đăng nhập (xem từ phần 3.1.1 đến 3.1.11 trong PA DSS)
 
-- Bật các tính năng mã hóa dữ liệu khi truyền tải, dựa theo yêu cầu pA DSS 12.1.
+- Bật các tính năng mã hóa dữ liệu khi truyền tải, dựa theo yêu cầu PA DSS 12.1.
 
 - Tiến hành khóa tài khoản sau một số lần nhất định thực hiện đăng nhập thất bại. (Xem phần 3.1.1 đến 3.1.11 trong PA DSS).
 
@@ -618,7 +618,7 @@ Thay vào đó, nếu như phân phối các bản cập nhật thông qua VPN h
 
 ###<a id="req11"/>Yêu cầu 11. Mã hóa các traffic quan trọng khi truyền tải trên đường mạng công cộng###
 
-11.1. 	Nếu như ứng dụng thanh toán có gửi, hoặc hỗ trợ gửi dữ liệu thẻ thông qua đường mạng công cộng, thì ứng dụng thanh toán phải hỗ trợ viwwcj sử dụng các thuật toán mã hóa mạnh và các giao thức an toàn để bảo vệ cho các dữ liệu thẻ quan trong ctrong quá trình truyền tải qua các môi trường mạng công cộng, bao gồm tôi sthieeur các điều sau:
+11.1. 	Nếu như ứng dụng thanh toán có gửi, hoặc hỗ trợ gửi dữ liệu thẻ thông qua đường mạng công cộng, thì ứng dụng thanh toán phải hỗ trợ việc sử dụng các thuật toán mã hóa mạnh và các giao thức an toàn để bảo vệ cho các dữ liệu thẻ quan trong ctrong quá trình truyền tải qua các môi trường mạng công cộng, bao gồm tối thiểu các điều sau:
 
 - Chỉ chấp nhận các trusted key và các trusted certificate.
 
@@ -642,7 +642,7 @@ Ví dụ về danh sách các mạng công cộng bao gồm:
 
 *Yêu cầu này gắn liền với phần 4.1 trong PCI DSS*
 
-11.2.	Nếu như ứng dụng thanh toán hỗ trợ việc gửi nhận PAN thông qua việc nhắn tin đến end-user (ví dụ, email, các dịch vụ instant messaging, chat), ứng dụng thanh toán phải cung cấp một giải pháp để khiến PAN không thể bị đọc được hoặc sử udngj một thuận toán mã hóa mạnh, hoặc phải chỉ định một thuật toán mã hóa mạnh để mã hóa PAN.
+11.2.	Nếu như ứng dụng thanh toán hỗ trợ việc gửi nhận PAN thông qua việc nhắn tin đến end-user (ví dụ, email, các dịch vụ instant messaging, chat), ứng dụng thanh toán phải cung cấp một giải pháp để khiến PAN không thể bị đọc được hoặc sử dụng một thuận toán mã hóa mạnh, hoặc phải chỉ định một thuật toán mã hóa mạnh để mã hóa PAN.
 
 *Yêu cầu này gắn liền với phần 4.2 trong PCI DSS*
 
@@ -658,7 +658,7 @@ SSL và các phiên bản TLS cũ không được coi là các phương pháp m�
 
 12.1.1	Hướng dẫn khách hàng mã hóa toàn bộ các truy cập quản trị không sử dụng console bằng các phương pháp mã hóa mạnh, cho các ứng dụng quản lý dựa trên nền web hoặc các truy cập quản trị không sử dụng console khác.
 
-Ghi chú: Các giao thức dạng clear text như Telnethay rlogin không được phép sử dụng trong các tác vụ truy cập bằng quyền quản trị.
+Ghi chú: Các giao thức dạng clear text như  Telnet hay rlogin không được phép sử dụng trong các tác vụ truy cập bằng quyền quản trị.
 
 *Yêu cầu này gắn liền với phần 2.3 trong PCI DSS*.
 
@@ -672,7 +672,7 @@ Ghi chú: Xác thực nhiều bước yêu cầu sử dụng ít nhất hai trê
 
 13.1. 	Phát triển, duy trì và phân phối một bản Hướng dẫn triển khai dịch vụ phù hợp với chuẩn PA DSS cho khách hàng, nhà bán lẻ, hoặc đối tác tích hợp dịch vụ, bao gồm đủ những yếu tố sau:
 
-13.1.1. Cung cấp đẩy đủ các thông tin của ứng dụng cho kahchs hàng, nhà bán lẻ, hoặc đối tác tích hợp.
+13.1.1. Cung cấp đẩy đủ các thông tin của ứng dụng cho khách hàng, nhà bán lẻ, hoặc đối tác tích hợp.
 
 13.1.2. Liệt kê tất cả các yêu cầu trong tài liệu này, bất cứ khi nào bản Hướng dẫn triển khai được tham chiếu
 
@@ -686,7 +686,7 @@ Ghi chú: Xác thực nhiều bước yêu cầu sử dụng ít nhất hai trê
 
 - Chịu trách nhiệm việc đảm bảo triển khai và đáp ứng đầy đủ tất cả các quy yêu cầu của PA DSS
 
-- Đảm bảo cập nhật đầy đủ khi có thay đổi trong PCI DSS* và PA DSS Program Guide
+- Đảm bảo cập nhật đầy đủ khi có thay đổi trong PCI DSS và PA DSS Program Guide
 
 - Đảm bảo việc thực hiện secure coding luôn luôn được tuân thủ.
 
