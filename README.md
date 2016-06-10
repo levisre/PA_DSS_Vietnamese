@@ -9,10 +9,11 @@ Originally from my business needs, So I'm trying to translate The PA DSS Require
 NOTE: This is a draft version, not the final. So it only contains the translated requirements set of whole the Official document, but not the Procedures and also Appendix. Will add them later.
 
 Based on PA DSS v3.2 (the latest version at current time). 
-See the pa_DSS_VI.md file.
+See the `pa_DSS_VI.md` file.
 
+If you want to view the Official PA DSS Document, please visit https://www.pcisecuritystandards.org/ or refer to `PA-DSS_v3-2.pdf` file in this repository.
 ##How can you help?##
 
 Yes, because it's an in-house project, and i'm currently working alone, so it contains bugs. Please give your support if you're interested, by providing suggesstions, corrections, or co-operate in translating the missing parts, which are not translated, though. That would be highly appreciated.
 
-Note that the document is being written in Markdown.
+Note that the document is being written in Markdown. Just folk the repo, make changes to `pa_DSS_VI.md` and push, then make a pull request.

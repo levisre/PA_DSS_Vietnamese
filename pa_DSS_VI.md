@@ -36,7 +36,7 @@
 
 ##<a id="definion"/>Khái niệm##
 
-The PCI Payment Application  Data Security  Standard (PA DSS) là bộ tiêu chuẩn được đặt ra để xác định các yêu cầu bảo mật và quy trình đánh giá cho nhà phát triển các ứng dụng thanh toán. Các ứng dụng thanh toán đáp ứng được theo chuẩn PA DSS sẽ giúp cho các ứng dụng này được sử dụng trong môi trường tương thích với chuẩn PCI DSS. 
+The PCI Payment Application  Data Security  Standard (PA DSS) là bộ tiêu chuẩn được đặt ra để xác định các yêu cầu bảo mật và quy trình đánh giá cho nhà phát triển các ứng dụng thanh toán. Các ứng dụng thanh toán đáp ứng được theo chuẩn PA DSS sẽ giúp cho các ứng dụng này đủ điều kiện để được sử dụng trong môi trường đang áp dụng chuẩn PCI DSS. 
 
 ##<a id="scope"/>Phạm vi của PA DSS##
 
@@ -164,7 +164,7 @@ Ghi chú: Phần này chỉ được áp dụng nếu như các phiên bản tr�
 
 *Yêu cầu này gắn liền với phần 3.1 trong PCI DSS*
 
-2.2.	Che bới số tài khoản cá nhân (Personal Account Number – PAN) khi hiển thị (6 kí tự đầu hoặc 4 kí tự cuối là số lượng kí tự tôi đa được phép hiện thỉ), Thêm vào đó, chỉ có cá nhân có yêu cầu về nghiệp vụ tài chính hợp lý mới được phép xem nhiều hơn 6 kí tự đầu/4 kí tự cuối của PAN.
+2.2.	Che bới số tài khoản cá nhân (Personal Account Number – PAN) khi hiển thị (6 kí tự đầu hoặc 4 kí tự cuối là số lượng kí tự tôi đa được phép hiển thị), Thêm vào đó, chỉ có cá nhân có yêu cầu về nghiệp vụ tài chính hợp lý mới được phép xem nhiều hơn 6 kí tự đầu/4 kí tự cuối của PAN.
 
 *Yêu cầu này gắn liền với phần 3.3 trong PCI DSS*
 
@@ -592,7 +592,7 @@ Thay vào đó, nếu như phân phối các bản cập nhật thông qua VPN h
 
 *Yêu cầu này gắn liền với phần 1 và 12.3.9 trong PCI DSS*.
 
-10.2.2. Nếu như nhà phát triển hoặc đơn vị tích hợp/nhà bán lẻ có thể truy cập từ xa vào ứng dụng thanh toán của khách hàng,l thì một mã ác thực cá nhân đặc biệt (có thể là mật khẩu) cần phải được gán cho từng khách ahngf riêng biệt.
+10.2.2. Nếu như nhà phát triển hoặc đơn vị tích hợp/nhà bán lẻ có thể truy cập từ xa vào ứng dụng thanh toán của khách hàng,l thì một mã ác thực cá nhân đặc biệt (có thể là mật khẩu) cần phải được gán cho từng khách hàng riêng biệt.
 
 *Yêu cầu này gắn liền với phần 8.6.1 trong PCI DSS*.
 
