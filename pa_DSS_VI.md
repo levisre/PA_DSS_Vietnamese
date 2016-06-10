@@ -89,7 +89,7 @@ Phạm vi đánh giá PA DSS bao gồm:
 1.1.	Không được lưu trữ các thông tin xác thực quan trọng sau khi quá trình xác thực hoàn tất (kể cả khi đã được mã hóa. Nếu như nhận được các dữ liệu xác thực quan trọng, phải xử lý sao cho các dữ liệu này không thể truy cập và khôi phục lại  sau khi quá trình xác thực hoàn tất. 
 Các thông tin xác thực quan trọng được mô tả  ở các phần 1.1.1 đến 1.1.3
 
-Yêu cầu này tương đương với phần 3.2 trong PCI DSS
+Yêu cầu này gắn liền với phần 3.2 trong PCI DSS
 
 1.1.1.	Không được lưu trữ toàn bộ nội dung của thẻ thanh toán ( bao gồm  dải từ  ở mặt sau của thẻ,  các thông tin lưu trong chip nhớ, hoặc các nơi khác) sau khi xác thực.
 Ghi chú: Trong các nghiệp vụ tài chính phổ biến, các dữ liệu sau có thể được dữ lại để tiếp tục sử dụng:
@@ -117,15 +117,15 @@ Ví dụ các thông tin không được phép lưu trữ sau khi kết thúc qu
 
 >- Các nội dung trong database
 
-Yêu cầu này tương đương với phần 3.2.1 trong PCI DSS.
+Yêu cầu này gắn liền với phần 3.2.1 trong PCI DSS.
 
 1.1.2.	Không lưu trữ mã xác nhận của thẻ hoặc các giá trị được sử dụng để xác thực (ví dụ như cụm 3 số hoặc 4 số được in ở mặt trước hoặc mặt sau  của thẻ, dùng trong các trường hợp thanh toán không quẹt thẻ) sau khi quá trình xác thực hoàn tất. Các thông tin liên quan khác không được phép lưu trữ giống mục 1.1.1
 
-Yêu cầu này tương đương với phần 3.2.2 trong PCI DSS
+Yêu cầu này gắn liền với phần 3.2.2 trong PCI DSS
 
 1.1.3.	Không được lưu trữ mã định danh cá nhân (PIN Number) hoặc cụm mã PIN được mã hóa sau khi hoàn tất quá trình xác thực. Các thông tin liên quan khác không được phép lưu trữ giống mục .1.1.1
 
-Yêu cầu này tương đương với phần 3.2.3 trong PCI DSS
+Yêu cầu này gắn liền với phần 3.2.3 trong PCI DSS
 
 1.1.4.	Tiễn hành xóa an toàn với tất cả dữ liệu lấy từ thẻ (lưu trữ trên dải từ hoặc những thông tin tương đương được lưu trên chip nhớ), mã xác nhận của thẻ, PIN lưu lại bởi những phiên bản trước của ứng dụng thanh toán, và phải tuân theo chuẩn xóa bỏ dữ liệu an toàn dành cho môi trường doanh nghiệp, ví dụ như danh sách các sản phẩm được liệt kê bởi NSA, hoặc các chuẩn riêng của từng quốc gia.
 
@@ -149,17 +149,17 @@ Ghi chú: Phần này chỉ được áp dụng nếu như các phiên bản tr�
 
 >>- Các nguồn thông tin khác nhận được từ khách hàng
 
-Yêu cầu này tương đương với phần 3.1 trong PCI DSS
+Yêu cầu này gắn liền với phần 3.1 trong PCI DSS
 
 ###<a id="req2"/>Yêu cầu 2. Bảo vệ dữ liệu thẻ khi lưu trữ
 
 2.1.	Nhà phát triển ứng dụng phải cung cấp hướng dẫn cho khách hàng về việc xóa an toàn các dữ liệu thẻ sau khi hết thời hạn lưu trữ do khách hàng định sẵn.
 
-Yêu cầu này tương đương với phần 3.1 trong PCI DSS
+Yêu cầu này gắn liền với phần 3.1 trong PCI DSS
 
 2.2.	Che bới số tài khoản cá nhân (Personal Account Number –PAN) khi hiển thị (6 kí tự đầu hoặc 4 kí tự cuối là số lượng kí tự tôi đa được phép hiện thỉ), Thêm vào đó, chỉ có cá nhân có yêu cầu về nghiệp vụ tài chính hợp lý mới được phép xem nhiều hơn 6 kí tự đầu/4 kí tự cuối của PAN.
 
-Yêu cầu này tương đương với phần 3.3 trong PCI DSS
+Yêu cầu này gắn liền với phần 3.3 trong PCI DSS
 
 2.3.	Tiến hành xử lý để PAN không thể đọc được ở bất cứ nới nào chúng được lưu trữ (bao gồm dữ liệu trên các thiết bị lưu trữ di động, các thiết bị backup, trong log file) bằng cách sử dụng bất cứ phương pháp nào trong các phương pháp dưới đấy;
 >- Sử dụng thuật toán băm (hashing) mạnh (hash toàn bộ PAN)
@@ -170,11 +170,11 @@ Yêu cầu này tương đương với phần 3.3 trong PCI DSS
 
 >- Sử dụng các thuật toán mã hóa mạnh kèm keo một cơ chế quản lý và phân phối khóa.
 
-Yêu cầu này tương đương với phần 3.4 trong PCI DSS
+Yêu cầu này gắn liền với phần 3.4 trong PCI DSS
 
 2.4.	Ứng dụng thanh toán phải bảo vệ các khóa được sử dụng trong quá trìnhmã hóa dữ liệu thẻ để chống lại việc bị làm lộ hoặc sử dụng sai mục đích.
 
-Yêu cầu này tương đương với phần 3.5 trong PCI DSS
+Yêu cầu này gắn liền với phần 3.5 trong PCI DSS
 
 2.5.	Ứng dụng thanh toán phải thiết lập một cơ chế quản lý và phân phối khóa được sử dụng cho các khóa tham gia vào quá trình mã hóa dữ liệu thẻ. Bào gồm ít nhất một trong các mục dưới đây:
 
@@ -211,7 +211,7 @@ Chi chú: Khái niệm "Các thay đổi sau cài đặt" ở trong yêu cầu 3
 
 3.1.1. Ứng dụng thanh toán không sử dụng (hoặc không yêu cầu sử dụng) tài khoản admin mặc định ở các phần mềm liên quan khác (ví dụ, ứng dụng thanh toán không được sử dụng tài quản admin của hệ thống database)
 
-Yêu cầu này tương đương với phần 2.1 tỏng PCI DSDS.
+Yêu cầu này gắn liền với phần 2.1 tỏng PCI DSDS.
 
 3.1.2. Ứng dụng phải bắt buộc thay đổi tất cả các mật khẩu mặc định của tất cả các tìa khoản được tạo ra và quản lý bởi ứng dụng, hay sau khi quá trình cài đặt kết thú, hoặc các thay đổi sau càu đặt.
 
@@ -221,7 +221,7 @@ Ghi chú: Ngay sau quá trình cài đặt và các thay đổi sau cài đặt,
 
 3.1.3. ứng dụng thanh toán tiến hành tạo ID riêng biệt và duy nhất cho từng tài khoản người dùng.
 
-Yêu cầu này tương đương với phần 81.1. trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.1. trong PCI DSS.
 
 3.1.4 Ứng dụng thanh toán phải có ít nhật một trong số các phương pháp duwois đây để thực hiện xác thực cho tất cả người dùng:
 
@@ -231,11 +231,11 @@ Yêu cầu này tương đương với phần 81.1. trong PCI DSS.
 
 .- Các thông tin mô tả người dùng, ví dụ như các thông tin cá nhân
 
-Yêu cầu này tương đương với phần 8.2 trong PCI DSS
+Yêu cầu này gắn liền với phần 8.2 trong PCI DSS
 
 3.1.5. Ứng dụng thanh toán không yêu cầu sử dụng các nhóm tài khaonr, hay các tài khoản dùng chung, các tên tài khoản và mật khẩu phổ biến
 
-Yêu cầu này tương đương với phần 8.5 trong PCI DSS
+Yêu cầu này gắn liền với phần 8.5 trong PCI DSS
 
 3.1.6. Ứng dụng thanh toán yêu cầu mật khẩu phải đáp ứng những điều kiện sau:
 
@@ -246,11 +246,11 @@ Yêu cầu này tương đương với phần 8.5 trong PCI DSS
 Hoặc là, ít nhất phải yêu cầu mật khẩu phải có độ phức tạp và độ mạnh tương đương với các yêu cầu kể trên,
 
 3.1.7. Ứng dụng thanh toán yêu cầu người dùng phải thay đổi mật khẩu ít nhất 90 ngày 1 lần.
-Yêu cầu này tương đương với phần 8.2.4 trong PCI DSS,
+Yêu cầu này gắn liền với phần 8.2.4 trong PCI DSS,
 
 3.1.8. Ứng dụng thanh toán lưu giữ lịch sử đặt mật khẩu và yêu cầu rằng mật khẩu mới phải khác so với bất kì 1 trong 4 mật khẩu được sử dụng gần nhất.
 
-Yêu cầu này tương đương với phần 8.2.5 trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.2.5 trong PCI DSS.
 
 3.1.9. Ứng ựng thanh toán giới hạn số lần truy cập bằng cách khóa tài khoản người dùng nếu như xác thực thất bại sau không quá 6 lần liên tiếp
 
@@ -258,19 +258,19 @@ Yêu cầu nay tương đương với phần 8.1.6 trong PCI DSS.
 
 3.1.10. Ứng dụng thanh toán có xác định thời gian khóa tối thiểu là 30 phút hoặc cho đến khi nguwofi quản trị mở khóa cho User ID.
 
-Yêu cầu này tương đương với phần 8.1.7 trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.1.7 trong PCI DSS.
 
 3.1.11. Trong phiên làm việc của ứng dụng thanh toán, nếu như không có thao tác nào xảy ra trong nhiều hơn 15 phút, ứng dụng tự động yêu cầu người dùng phải xác thực lại để tái kích hoạt phiên làm việc.
 
-Yêu cầu này tương đương với phần 8.1.8 trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.1.8 trong PCI DSS.
 
 3.2.	Nhà phát triển phần mêm phải cung cấp hướng dẫn cho khách hàng về việc tất cả các truy cập đến PC, server, database bằng ứng dụng thanh toán phải yêu cầu một unique user ID và các bước xác thực an toàn
 
-Yêu cầu này tương đương với phần 8.1 va f8.2 trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.1 và 8.2 trong PCI DSS.
 
 3.3.	Bảo vệ tất cả các mật khẩu trong ứng dụng thanh toán )bao gồm cả mật khẩu người dùng và mật khẩu ứng dụng), trong quá trình truyền tải và lưu trữ.
 
-Yêu cầu này tương đương với phần 8.2.1 trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.2.1 trong PCI DSS.
 
 3.3.1. Sử dụng các thuật toán mã hóa mnahj để mã hoắ mật khẩu, khiến chúng không thể bị đọc được trong suốt quá trình truyền tải.
 
@@ -285,13 +285,13 @@ Ghi chú: biến input không cần phải khó đoán được hoặc phải gi
 
 >- Mặc định, tất cả các tải khoản ứng dụng, dịch vụ chỉ được cấp phép các quyền tối thiểu được gán cho từng loại tính năng, tài nguyên cần thiết cho hoạt động của ứng dụng, dịch vụ đó.
 
-Yêu cầu này tương đương với phần 7 trong PCI DSS.
+Yêu cầu này gắn liền với phần 7 trong PCI DSS.
 
 ###<a id="req4"/>Yêu cầu 4. Ghi log hoạt động của ứng dụng thanh toán###
 
 4.1.	Ngay sau khi hoàn thành cài đặt, trạng thái mặc định của ứng dụng được cài đặt phải ghi log lại toàn bộ các truy cập của người dùng và có thể đưa la mối liên kết tất cả các hoạt động với từng cá nhân riêng lẻ.
 
-Yêu cầu này tương đương với phần 10.1 trong PCI DSS.
+Yêu cầu này gắn liền với phần 10.1 trong PCI DSS.
 
 4.2.	Ứng dụng thanh toán phải cung cấp một quá trình kiểm tra tự động để tái cấu trúc lại những sự kiện duwois đây:
 
@@ -310,7 +310,7 @@ Yêu cầu này tương đương với phần 10.1 trong PCI DSS.
 4.2.7. Việc tạo mới hoặc xóa các đối tượng ở system-level, ngay trong ứng dụng, hoặc được thực hiện bởi ứng dụng.
 
 4.3.	Ứng dụng thanh toán phải ghi lại ít nhất các dề mục kiểm tra sau, đối với mỗi sự kiện:
-Yêu cầu này tương đương với phần 10.3 trong PCI DSS.
+Yêu cầu này gắn liền với phần 10.3 trong PCI DSS.
 
 4.3.1. ĐỊnh danh người dùng
 
@@ -332,7 +332,7 @@ Ghi chú: Ví dụ về tính năng ngày có thể bao gồm việc :
 
 >- Cung cấp tinh năng và tài liệu để thực hiện chuyển đôi định dạng log của ứng dụng thành định dạng log chuẩn, phù hợp cho các tác vụ ghi log tập trung.
 
-Yêu cầu này tương đương với phần 10.5.3 trong PCI DSS.
+Yêu cầu này gắn liền với phần 10.5.3 trong PCI DSS.
 
 ###<a id="req5"/>Yêu cầu 5: Phát triển các ứng dụng thanh toán an toàn###
 
@@ -346,19 +346,19 @@ Yêu cầu này tương đương với phần 10.5.3 trong PCI DSS.
 
 >- Phải luôn có quá trình rà soát kiểm tra về mặt bảo mật trong quá trình release ứng dụng hoặc cập nhật phiên bản ứng dụng.
 
-Yêu cầu này tương đương với phần 6.3 trong PCI DSS.
+Yêu cầu này gắn liền với phần 6.3 trong PCI DSS.
 
 5.1.1. Các PAN thật không được dùng trong quá trình phát triển hoặc kiểm thử.
 
-Yêu cầu này tương đương với phần 6.4.3 trong PCI DSS. 
+Yêu cầu này gắn liền với phần 6.4.3 trong PCI DSS. 
 
 5.1.2. Dữ liệu và các tài khoản dùng thử đều phải được xóa bỏ trước khi release cho khách hàng
 
-Yêu cầu này tương đương với phần 6.4.4 trong PCI DSS.
+Yêu cầu này gắn liền với phần 6.4.4 trong PCI DSS.
 
 5.1.3. Các tài khoản, User ID, mật khẩu tùy chọn trong ứng dụng thanh toán đều phải bị loạt bỏ trước khi release cho khách hàng.
 
-Yêu cầu này tương đương với phần 6.3.1 trong PCI DSS.
+Yêu cầu này gắn liền với phần 6.3.1 trong PCI DSS.
 
 5.1.4. Code của ứng dụng thanh toán phải được review lại trước khi release cho khách hàng, nếu như có bất kì sự thay đổi quan trọng nào, để xác định bất cứ những rủi ro về code nào (kiểm tra bằng cách thủ công hoặc tự động), để đảm bảo được ít nhất: 
 >- Việc xem xét các thay đổi về code phải được thực hiện bởi một đơn vị độc lập, chứ không phảido người viết code. và đơn vị thực hiện xem xét code phải có kiến thức về code review và kinh nghiệm về secure coding.
@@ -407,7 +407,7 @@ Ghi chú: Việc đào tạo cho developer có thể được thực hiện bở
 
 5.2. Phát triển tất cả các ứng dụng thanh toán phải phòng chống được các điểm yếu về code phổ biến trong quy trình phát triển phần mềm.
 
-Yêu cầu này tương đương với phần 6.5 trong PCI DSS
+Yêu cầu này gắn liền với phần 6.5 trong PCI DSS
 
 Ghi chú, các yêu cầu từ 5.2.1 đến 5.2.6 dưới đây, áp dung cho tất cả các dạng ứng dụng (kể cả ứng dụng nội bộ lẫn ứng dụng công khai)
 
@@ -433,7 +433,7 @@ Ghi chú: Các yêu cầu từ 5.2.7 đến 5.2.10 dưới đây, áp dụng cho
 
 5.2.10. Thất bại trong việc xác thực và quản lý session.
 
-5.3.	Nhà phát triển ứng dụng phải  tuân theo quy trình quản lý các thay đổi, cho tất cả các thay đổi của ứng dụng. Quy trình quản lý thay đổi phải tuân thủ theo quy trình phát triển cũng như release sản phẩm (được định nghĩa trong Yêu cầu 5.1 của PA DSS). và bao gồm cả các phần sau (Yêu cầu này tương đương với phần 6.4.5 trong PA DSS):
+5.3.	Nhà phát triển ứng dụng phải  tuân theo quy trình quản lý các thay đổi, cho tất cả các thay đổi của ứng dụng. Quy trình quản lý thay đổi phải tuân thủ theo quy trình phát triển cũng như release sản phẩm (được định nghĩa trong Yêu cầu 5.1 của PA DSS). và bao gồm cả các phần sau (Yêu cầu này gắn liền với phần 6.4.5 trong PA DSS):
 
 5.3.1. Lập bản ghi chép về sự ảnh hưởng được tạo ra với các thay đổi được áp dụng. 
 
@@ -510,19 +510,19 @@ Tài liệu này bao gồm
 
 6.1. Đối với các ứng dụng thanh toán sử dụng mạng không ddaaay, thay đổi các tất cả các thông số mặc định của nhà sản xuất cho các thiết bị mạng, bao gồm cả khóa mã hóa mặc định của mạng không dây, mật khẩu, SNMP Community String.
 
-Yêu cầu này tương đương với phần 1.2.3 và 2.1.1 trong PCI DSS.
+Yêu cầu này gắn liền với phần 1.2.3 và 2.1.1 trong PCI DSS.
 
 6.2. Đối với các ứng dụng thanh toán sử dụng mạng khôn dây, các ứng dụng nhày phải tương thích với ác tiêu chuẩn dành cho doanh nghiệp (ví dụ IEEE 802.11i) để sử dụng các phương phapts mã hóa và xác thực mạnh trong quá trình truyền tải dữ liệu
 
 Ghi chú: Không được phép sử dụng WEP
 
-Yêu cầu này tương đương với phần 4.1.1 trong PCI DSS.
+Yêu cầu này gắn liền với phần 4.1.1 trong PCI DSS.
 
 6.3. Cung cấp các hướng dẫn cho khách hàng về việc sử dụng an toàn amngj không đây.
 
 Ghi chú: Yêu cầu này áp dụng cho tất cả các ứng dụng được thiết kế để sử dụng trên đường mạng không dây.
 
-Yêu cầu này tương đương với phần 1.2.3, 2.1.1, 4.1.1 trong PCI DSS
+Yêu cầu này gắn liền với phần 1.2.3, 2.1.1, 4.1.1 trong PCI DSS
 
 ###<a id="req7"/>Yêu cầu 7. Kiểm tra bảo mật cho các ứng dụng thanh toán và luôn duy trì cập nhật ứng dụng.###
 
@@ -548,13 +548,13 @@ Yêu cầu này tương đương với phần 1.2.3, 2.1.1, 4.1.1 trong PCI DSS
 
 8.1. Ứng dụng thanh toán phải có thể triển khai được trong một mô hình mạng an toàn. Ứng dụng không gây xung đột với các thiết bị, ứng dụng, hoặc các cấu hình trong môi trường đang áp dụng chuẩn PCI DSS.
 
-Yêu cầu này tương đương với phần 1,3,4,5,6 trong PCI DSS.
+Yêu cầu này gắn liền với phần 1,3,4,5,6 trong PCI DSS.
 
 8.2. Ứng dụng thanh toán chỉ được sử dụng các thành phần thực sự cần thiết cho việc hoạt động (dịch vụ, giao thức, tiến trình nền, các phần mềm và phần cứng liên quan, các thành phần khác), bao gồm cả những thành phần được cung cấp bởi bên thứ ba, nếu chúng được coi là an toàn. 
 
 Ghic hú: SSL và các bản TLS cũ không được coi là các giao thức bảo mật an toàn. Ứng dụng thanh toán không được phép sử dụng hoặc hỗ trợ sử dụng SSL hoặc TLS phiên bản cũ. Ứng dụng cũng có sử dụng hoặc hỗ trợ sử dụng TLS thì không cho phép sử dụng SSL trong trường hợp failback.
 
-Yêu cầu này tương đương với phần 2.2.3 trong PCI DSS.
+Yêu cầu này gắn liền với phần 2.2.3 trong PCI DSS.
 
 8.3. Ứng dụng thanh toán không được phép sử dụng các dịch vụ và sản phẩm có thể gây xung đột hoặc không tương thích với việc sử dụng các công nghệ xác thực nhiều bước.
 
@@ -570,13 +570,13 @@ Ghi chú: Xác thực nhiều bước yêu cầu phải cso ít nhất từ 2 đ
 
 9.1 	Bất cứ web server hoặc các thành phần phục vụ lưu trữ dữ liệu thẻ (ví dụ, database server) không được nằm chung trên 1 server, cũng như các thành phần phục vụ lưu trữ dữ liệu thẻ không được nằm chung vùng mạng với Webserver.
 
-Yêu cầu này tương đương với phần 1.3.7 trong PCI DSS.
+Yêu cầu này gắn liền với phần 1.3.7 trong PCI DSS.
 
 ###<a id="req10"/>Yêu cầu 10. Tính tương thích với các cơ chế truy cập từ xa an toàn đến ứng dụng thanh toán###
 
 10.1.	Các phương pháp xác thực nhiều bước cần phải được áp dụng cho tất cả các truy cập từ xa đến ứng dụng thanh toán xuất phát từ các nguồn nằm ngoài không gian hoạt động của khách hàng. 
 
-Yêu cầu này tương đương với phần 8.3 trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.3 trong PCI DSS.
 
 10.2 	Tất cả các hoạt động truy cập từ xa đến ứng dụng thanh toán đều phải thwucj hiện một cách an toàn, dựa trên các tiêu chí dưới đây:
 
@@ -584,11 +584,11 @@ Yêu cầu này tương đương với phần 8.3 trong PCI DSS.
 
 Thay vào đó, nếu như phân phối các bản cập nhật thông qua VPN hoặc các kết nối tốc độ cao, thì nhà phát triển phần mềm phải khuyến nghị cho khách hàng để cấu hình firewall an toàn để bảo vệ cho các kết nối "Always On".
 
-Yêu cầu này tương đương với phần 1 và 12.3.9 trong PCI DSS.
+Yêu cầu này gắn liền với phần 1 và 12.3.9 trong PCI DSS.
 
 10.2.2. Nếu như nhà phát triển hoặc đơn vị tích hợp/nhà bán lẻ có thể truy cập từ xa vào ứng dụng thanh toán của khách hàng,l thì một mã ác thực cá nhân đặc biệt (có thể là mật khẩu) cần phải được gán cho từng khách ahngf riêng biệt.
 
-Yêu cầu này tương đương với phần 8.6.1 trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.6.1 trong PCI DSS.
 
 10.2.3. Việc truy cập từ xa đến ứng dụng thanh toán của khách hàng bởi nhà phát triển hoặc đơn vị tích hợp/nhà bán lẻ, hoặc chính khcachs hàng, đều phải được thiết lập một cách an toàn, ví dụ:
 
@@ -608,7 +608,7 @@ Yêu cầu này tương đương với phần 8.6.1 trong PCI DSS.
 
 >- Giới hạn truy cập vào không gian riêng của khách hàng đối với từng cá nhân được cấp quyền.
 
-Yêu cầu này tương đương với phần 2, 8, 10 trong PCI DSS.
+Yêu cầu này gắn liền với phần 2, 8, 10 trong PCI DSS.
 
 ###<a id="req11"/>Yêu cầu 11. Mã hóa các traffic quan trọng khi truyền tải trên đường mạng công cộng###
 
@@ -634,11 +634,11 @@ Ví dụ về danh sách các mạng công cộng bao gồm:
 
 >- Mạng dữ liệu truyền tải thông qua vệ tinh
 
-Yêu cầu này tương đương với phần 4.1 trong PCI DSS
+Yêu cầu này gắn liền với phần 4.1 trong PCI DSS
 
 11.2.	Nếu như ứng dụng thanh toán hỗ trợ việc gửi nhận PAN thông qua việc nhắn tin đến end-user (ví dụ, email, các dịch vụ instant messaging, chat), ứng dụng thanh toán phải cung cấp một giải pháp để khiến PAN không thể bị đọc được hoặc sử udngj một thuận toán mã hóa mạnh, hoặc phải chỉ định một thuật toán mã hóa mạnh để mã hóa PAN.
 
-Yêu cầu này tương đương với phần 4.2 trong PCI DSS
+Yêu cầu này gắn liền với phần 4.2 trong PCI DSS
 
 ###<a id="req12"/>Yêu cầu 12. Bảo vệ tất cả các truy cập bằng quyền quản trị không sử dụng console###
 
@@ -648,19 +648,19 @@ Ghi chú: Các giao thức dạng clear text như Telnet hay rlogin không đư�
 
 SSL và các phiên bản TLS cũ không được coi là các phương pháp mã hóa mạnh. Các ứng dụng thanh toán không được phép sử dụng, haowcj hỗ trợ sử dungjSSL hoặc các phiên bản TLS cũ. Ứng dụng có sử dụng TLS không được cho phép sử dụng SSL trong trường hợp failback.
 
-Yêu cầu này tương đương với phần 2.3 trong PCI DSS
+Yêu cầu này gắn liền với phần 2.3 trong PCI DSS
 
 12.1.1	Hướng dẫn khách hàng mã hóa toàn bộ các truy cập quản trị không sử dụng console bằng các phương pháp mã hóa mạnh, cho các ứng dụng quản lý dựa trên nền web hoặc các truy cập quản trị không sử dụng console khác.
 
 Ghi chú: Các giao thức dạng clear text như Telnethay rlogin không được phép sử dụng trong các tác vụ truy cập bằng quyền quản trị.
 
-Yêu cầu này tương đương với phần 2.3 trong PCI DSS.
+Yêu cầu này gắn liền với phần 2.3 trong PCI DSS.
 
 12.2.	Sử dụng phương pháp xác thực nhiều bước cho tất cả các cá nhân thực hiện truy cập quản trị không sử dụng console.
 
 Ghi chú: Xác thực nhiều bước yêu cầu sử dụng ít nhất hai trên ba phương thwucs xác thực. (Xem Yêu cầu 3.1.4 để biết thêm về các phương pháp xác thực). 
 
-Yêu cầu này tương đương với phần 8.3 trong PCI DSS.
+Yêu cầu này gắn liền với phần 8.3 trong PCI DSS.
 
 ###<a id="req13"/>Yêu cầu 13. Tạo lập và duy trì bản hướng dẫn triên khai dịch vụ phù hợp với PA DSS cho khách hàng, nhà bán lẻ, hoặc đối tác tích hợp dịch vụ###
 
