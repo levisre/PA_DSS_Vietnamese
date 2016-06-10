@@ -680,17 +680,17 @@ Yêu cầu này tương đương với phần 8.3 trong PCI DSS.
 
 >- Chịu trách nhiệm việc đảm bảo triển khai và đáp ứng đầy đủ tất cả các quy yêu cầu của PA DSS
 
->- Bảo đảm cập nhật đầy đủ khi có thay đổi trong PCI DSS và PA DSS Program Guide
+>- Đảm bảo cập nhật đầy đủ khi có thay đổi trong PCI DSS và PA DSS Program Guide
 
 >- Đảm bảo việc thực hiện secure coding luôn luôn được tuân thủ.
 
-- Đảm bảo rằng các đối tác tích hợp/nhà bán lẻ luôn nhận được các chương trình đào tạo sử dụng, và các nguồn tài nguyên hỗ trợ khác (tài liệu, hỗ trợ trực tiếp,...).
+>- Đảm bảo rằng các đối tác tích hợp/nhà bán lẻ luôn nhận được các chương trình đào tạo sử dụng, và các nguồn tài nguyên hỗ trợ khác (tài liệu, hỗ trợ trực tiếp,...).
 
 >- Đảm bảo rằng tất cả những cá nhân chịu trách nhiệm cho từng hạng mục trong quá trình triển khai PA DSS, bao gồm cả các developer, đều nhận được các khóa đào tạo kiến thức về PA DSS.
 
 14.3. Phát triển, duy trì các chương trình đào tạo, chia sẻ kinh nghiệm cho các đối tác tích hợp và các nhà bán lẻ. Việc đào tạo phải bao gồm tối thiểu các nội dung dưới đây:
 
--> Làm thế nào để triển khai sử dụng ứng dụng thanh toán và các hệ thống có liên quan khi muốn xây dựng hệ thống tương thích với PCI DSS.
+>- Làm thế nào để triển khai sử dụng ứng dụng thanh toán và các hệ thống có liên quan khi muốn xây dựng hệ thống tương thích với PCI DSS.
 
 >- Bao hàm tất cả các tiêu chí được ghi lại trong phần Hướng dẫn chiển khai PA DSS xuyên suốt tài liệu này (và phần phụ lục A).
 
