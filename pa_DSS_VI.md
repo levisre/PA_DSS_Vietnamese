@@ -36,11 +36,11 @@
 
 ##<a id="definion"/>Khái niệm##
 
-The PCI Payment Application  Data Security  Standard (PA DSS) là bộ tiêu chuẩn được đặt ra để xác định các yêu cầu bảo mật và quy trình đánh giá cho nhà phát triển các ứng dụng thanh toán. Các ứng dụng thanh toán đáp ứng được theo chuẩn PA DSS sẽ giúp cho các ứng dụng này đủ điều kiện để được sử dụng trong môi trường đang áp dụng chuẩn PCI DSS. 
+The PCI Payment Application Data Security Standard (PA DSS) là bộ tiêu chuẩn được đặt ra để xác định các yêu cầu bảo mật và quy trình đánh giá cho nhà phát triển các ứng dụng thanh toán. Các ứng dụng thanh toán đáp ứng được theo chuẩn PA DSS sẽ giúp cho các ứng dụng này đủ điều kiện để được sử dụng trong môi trường đang áp dụng chuẩn PCI DSS. 
 
 ##<a id="scope"/>Phạm vi của PA DSS##
 
-PA DSS áp dụng cho tất cả các nhà phát triển phần mềm và những cá nhân, tổ chức khác đang phát triển các ứng dụng  thanh toán mà có tính năng lưu trữ, xử lý, và truyền tải dữ liệu thẻ hoặc các dữ liệu xác thực quan trọng khác, 
+PA DSS áp dụng cho tất cả các nhà phát triển phần mềm và những cá nhân, tổ chức khác đang phát triển các ứng dụng thanh toán mà có tính năng lưu trữ, xử lý, và truyền tải dữ liệu thẻ hoặc các dữ liệu xác thực quan trọng khác, 
 
 Phạm vi đánh giá PA DSS bao gồm:
 
@@ -63,10 +63,9 @@ Phạm vi đánh giá PA DSS bao gồm:
 
     - Khách hàng biết cách để triển khải ứng dụng thanh toán trong môi trường tuân thủ PCI DSS
 
-    - Khách hàng được thông báo rằng một vài thành phần trong ứng dụng thanh toán hoặc các cấu hình  có thể không phù hợp với PCI DSS.
+    - Khách hàng được thông báo rằng một vài thành phần trong ứng dụng thanh toán hoặc các cấu hình có thể không phù hợp với PCI DSS.
 
     >   Lưu ý rằng nhà cung cấp ứng dụng cũng cần phải cung cấp những hướng dẫn kể cả khi có các trường hợp sau:
-
 
     - Không thể được xử lý bởi nhà cung cấp ứng dụng một khi ứng dụng đó được cài đặt bởi khách hàng
 
@@ -98,7 +97,7 @@ Các thông tin xác thực quan trọng được mô tả  ở các phần 1.1.
 
 *Yêu cầu này gắn liền với phần 3.2 trong PCI DSS*
 
-1.1.1.	Không được lưu trữ toàn bộ nội dung của thẻ thanh toán ( bao gồm  dải từ  ở mặt sau của thẻ,  các thông tin lưu trong chip nhớ, hoặc các nơi khác) sau khi xác thực.
+1.1.1.	Không được lưu trữ toàn bộ nội dung của thẻ thanh toán ( bao gồm  dải từ  ở mặt sau của thẻ, các thông tin lưu trong chip nhớ, hoặc các nơi khác) sau khi xác thực.
 Ghi chú: Trong các nghiệp vụ tài chính phổ biến, các dữ liệu sau có thể được dữ lại để tiếp tục sử dụng:
 
 - Tên chủ thẻ
@@ -109,12 +108,12 @@ Ghi chú: Trong các nghiệp vụ tài chính phổ biến, các dữ liệu sa
 
 - Mã dịch vụ
 
-Để giảm thiểu rủi ro,  chỉ lưu trữ những dữ liệu này khi nghiệp vụ tài chính yêu cầu.
+Để giảm thiểu rủi ro, chỉ lưu trữ những dữ liệu này khi nghiệp vụ tài chính yêu cầu.
 Ví dụ các thông tin không được phép lưu trữ sau khi kết thúc quá trình xác thực:
 
 - Các thông tin thanh toán đầu vào
 
-- Tất cả các nhật kí (ví dụ:  Lịch sử giao dịch,  thông tin gỡ lỗi, các thông báo lỗi,...)
+- Tất cả các nhật kí (ví dụ: Lịch sử giao dịch, thông tin gỡ lỗi, các thông báo lỗi,...)
 
 - Các file lưu trữ lịch sử
 
